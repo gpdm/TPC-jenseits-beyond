@@ -163,6 +163,9 @@ Compare that against DOS 5 without `HIMEM`, but `confram`, and DOS loaded low:
 
 ![mft with mouse driver loaded to low memory](img/mft_3c.png)
 
+## 86Box Test VM
+
+Check out my [86Box Test VM](./86box-confram-test-vm) for a preconfigured testbed to play around with.
 
 ## Compatibility and Limitations
 
@@ -179,7 +182,7 @@ The code available in this repository was reconstructed from the digital scans o
 
 For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this [repository](./ct).
 
-I provide both the unaltered *german* copy of the [source files](./src/de) and x[precompiled binaries](./bin/de),
+I provide both the unaltered *german* copy of the [source files](./src/de) and [precompiled binaries](./bin/de),
 as well as *english* [translated sources](./src/en) and [binaries](./bin/en).
 
 No further change was applied to the english copies apart from the translation,
