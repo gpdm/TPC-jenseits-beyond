@@ -1,6 +1,5 @@
 # c't Magazin für Computer Technik
 
-```
 The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine *c't*.
 
 The full digital scans of the original issues can be found on archive.org:
