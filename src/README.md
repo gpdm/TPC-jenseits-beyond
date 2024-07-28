@@ -5,7 +5,7 @@ use at least *Turbo Pascal 4.0*.
 
 For compiling `sysmap`, you must use at least *Turbo C 2.0*.
 
-A (makefile)[MAKEFILE]* is provided for your convenience.
+A (makefile)[MAKEFILE] *) is provided for your convenience.
 It supports the following targets:
 
 ```
