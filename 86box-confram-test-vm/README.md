@@ -13,6 +13,7 @@ I've configured it to have
 
 Now, if you do the math, this leaves you with the following memory outline:
 
+```
  +-------+
  | 1024K | Expansion 2 (from 1024K-2048K)
  +-------+
@@ -22,6 +23,7 @@ Now, if you do the math, this leaves you with the following memory outline:
  +-------+
  |  512K | Base Memory (from 0K-512K)
  +-------+
+```
 
 The memory hole between 960K-1024K for the System ROM (BIOS)
 deemed necessary, as without it, the RAM expansion would shadow

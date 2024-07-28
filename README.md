@@ -12,7 +12,7 @@ The technique described by c't was very specific about using a RAM expansion, to
 between 640K and 1024K, and remap the available segments, so to speak, the ones not blocked by 
 the graphics adapters, disk controller ROMs or the System ROM, into the conventional memory space.
 
-I furtherly explored this in an explanatory (video)[https://www.youtube.com/watch?v=Nbw5klso-VY) on my YT channel.
+I furtherly explored this in an explanatory [video](https://www.youtube.com/watch?v=Nbw5klso-VY) on my YT channel.
 
 
 ## Extending The Conventional Memory
@@ -175,12 +175,12 @@ It can be extended to have multiple regions covered, which whould maximize the a
 
 ## The Code
 
-The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine (c't)[https://www.heise.de/ct].
+The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine [c't](https://www.heise.de/ct).
 
-For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this (repository)[./ct].
+For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this [repository](./ct).
 
-I provide both the unaltered *german* copy of the (source files)[./src/de] and (precompiled binaries)[./bin/de],
-as well as *english* (translated sources)[./src/en] and (binaries)[./bin/en].
+I provide both the unaltered *german* copy of the [source files](./src/de) and x[precompiled binaries](./bin/de),
+as well as *english* [translated sources](./src/en) and [binaries](./bin/en).
 
 No further change was applied to the english copies apart from the translation,
 which overs some code segments, annotations and comments, function names.
@@ -188,7 +188,7 @@ which overs some code segments, annotations and comments, function names.
 That also means, any bugs and issues, which may be present in the code, have decidedly not been corrected for.
 This is provided *as is*, exactly the way it was published by *c't* in 1988.
 
-You'll find further annotations on the source and how to build it in the (src)[./src] directory.
+You'll find further annotations on the source and how to build it in the [src](./src) directory.
 
 
 ## Attributions and Copyright
