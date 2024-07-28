@@ -3,7 +3,7 @@
 To facilitate testing of `jenseits` / `beyond`, I've create
 this 86box Test VM.
 
-It's the same as featured in my (video)[https://www.youtube.com/watch?v=Nbw5klso-VY] on YouTube, and is based on an *IBM PC AT 1570* base configuration.
+It's the same as featured in my [video](https://www.youtube.com/watch?v=Nbw5klso-VY) on YouTube, and is based on an *IBM PC AT 1570* base configuration.
 
 I've configured it to have
 
@@ -35,8 +35,8 @@ demo the `jenseits` / `beyond` utilities.
 
 For that purposes, two floppy disk images are provided:
 
-* `cftest360-dos33.ima`: PC-DOS 3.3
-* `cftest360-dos5.ima`: PC-DOS 5.02
+* [cftest360-dos5.imaftest360-dos33.ima](./cftest360-dos33.ima): PC-DOS 3.3
+* [cftest360-dos5.ima](./cftest360-dos5.ima): PC-DOS 5.02
 
 Both disk are mostly identical and ready to run, booting directly
 into DOS with
