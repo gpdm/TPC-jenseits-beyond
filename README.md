@@ -48,6 +48,8 @@ leaving you with a total of 800K conventional memory available to DOS.
 But beware, first you must perform a memory readout using the `sysmap` utility to understand,
 which memory regions can be used!
 
+![sysmap default output](img/confram_flow_diagram.png)
+
 
 ## Memory Readout (sysmap)
 
@@ -126,15 +128,13 @@ memory area between 640k to 1024K.
 You don't need `HIMEM` or `EMM386`, which wouldn't run anyway on 8088 and 8086 machines.
 And, it works with MS-DOS/PC-DOS 3.0 upwards, which, by definition, didn't have the `LOADHIGH` and `DEVICEHIGH` commands yet.
 
-
 What happens behind the scenes is that the `confram` utility overrides the BIOS memory address `0:413h`
 with a new memory sizes, and performs a warm reboot.
 
 Most machines won't revert the memory size upon a warm reboot, which allows `confram` on the second reboot to readout the
 memory size, and perform some in-memory patching of the DOS memory control blocks to use the newly available RAM.
 
-
-## Maxing out with a 286
+## Maxing out with a 286
 
 The technique also works on 286 or later systems, although there's not much point in using it on any 386 or above,
 as there you can use EMM386 et all.
@@ -155,9 +155,14 @@ And this into `AUTOEXEC.BAT` (assuming this matches our RAM segments as reported
 CONFRAM EFFF A000-C800
 ```
 
-This would give a conventional memory outline like this:
+Running DOS 5 with `HIMEM` and `confram` would give a conventional memory outline like this when DOS is loaded high:
 
 ![mft with mouse driver loaded to low memory](img/mft_3b.png)
+
+Compare that against DOS 5 without `HIMEM`, but `confram`, and DOS loaded low:
+
+![mft with mouse driver loaded to low memory](img/mft_3c.png)
+
 
 ## Compatibility and Limitations
 
@@ -172,10 +177,10 @@ It can be extended to have multiple regions covered, which whould maximize the a
 
 The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine (c't)[https://www.heise.de/ct].
 
-For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this (repository)[ct].
+For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this (repository)[./ct].
 
-I provide both the unaltered *german* copy of the (source files)[src/de] and (precompiled binaries)[bin/de],
-as well as *english* (translated sources)[src/en] and (binaries)[bin/en].
+I provide both the unaltered *german* copy of the (source files)[./src/de] and (precompiled binaries)[./bin/de],
+as well as *english* (translated sources)[./src/en] and (binaries)[./bin/en].
 
 No further change was applied to the english copies apart from the translation,
 which overs some code segments, annotations and comments, function names.
@@ -183,11 +188,16 @@ which overs some code segments, annotations and comments, function names.
 That also means, any bugs and issues, which may be present in the code, have decidedly not been corrected for.
 This is provided *as is*, exactly the way it was published by *c't* in 1988.
 
+You'll find further annotations on the source and how to build it in the (src)[./src] directory.
+
+
 ## Attributions and Copyright
 
 I retain no copyright by the original *c't* publications, these are Copyright (c) 1988 by Heise Zeitschriften Verlag GmbH & Co. KG.
+
 `jenseits` and `confram` are Copyright (c) 1988 by Ralf Preller.
-`sysmap` doesn't have a Copyright attribution, but I believe is Copyright (c) 1988 of either Ralf Preller, or Heise Zeitschriften Verlag GmbH & Co. KG.
+
+`sysmap` doesn't have a Copyright attribution, but I believe is Copyright (c) 1988 of either Peter Köhlmann, Gerhard Rubel, or Michael Wilde, or Heise Zeitschriften Verlag GmbH & Co. KG.
 
 
 
