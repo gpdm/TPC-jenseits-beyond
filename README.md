@@ -169,7 +169,7 @@ Compare that against DOS 5 without `HIMEM`, but `confram`, and DOS loaded low:
 I didn't go into long runs of testing outside MS/PC DOS, but a quick test on DR DOS 6 showed, it wouldn't run.
 Further investigation is needed, including other DOS distributions, be it PTS and Paragon DOS and FreeDOS.
 
-Furterly, the `confram` utility is not very sophisticated, as it only supports only exclusion range at the time.
+Furtherly, the `confram` utility is not very sophisticated, as it only supports one exclusion range at the time.
 It can be extended to have multiple regions covered, which whould maximize the amount of usable conventional memory. 
 
 
@@ -193,11 +193,11 @@ You'll find further annotations on the source and how to build it in the (src)[.
 
 ## Attributions and Copyright
 
-I retain no copyright by the original *c't* publications, these are Copyright (c) 1988 by Heise Zeitschriften Verlag GmbH & Co. KG.
+I retain no copyright of the original *c't* publications, these are Copyright (c) 1988 by Heise Zeitschriften Verlag GmbH & Co. KG.
 
 `jenseits` and `confram` are Copyright (c) 1988 by Ralf Preller.
 
-`sysmap` doesn't have a Copyright attribution, but I believe is Copyright (c) 1988 of either Peter Köhlmann, Gerhard Rubel, or Michael Wilde, or Heise Zeitschriften Verlag GmbH & Co. KG.
+`sysmap` doesn't have a Copyright attribution, but I guess it's Copyright (c) 1988 of either Peter Köhlmann, Gerhard Rubel, or Michael Wilde, or Heise Zeitschriften Verlag GmbH & Co. KG.
 
 
 
