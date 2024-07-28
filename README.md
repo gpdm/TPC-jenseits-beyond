@@ -12,6 +12,8 @@ The technique described by c't was very specific about using a RAM expansion, to
 between 640K and 1024K, and remap the available segments, so to speak, the ones not blocked by 
 the graphics adapters, disk controller ROMs or the System ROM, into the conventional memory space.
 
+I furtherly explored this in an explanatory (video)[https://www.youtube.com/watch?v=Nbw5klso-VY) on my YT channel.
+
 
 ## Extending The Conventional Memory
 
@@ -155,12 +157,16 @@ CONFRAM EFFF A000-C800
 
 This would give a conventional memory outline like this:
 
+![mft with mouse driver loaded to low memory](img/mft_3b.png)
 
-
-## Compatibility
+## Compatibility and Limitations
 
 I didn't go into long runs of testing outside MS/PC DOS, but a quick test on DR DOS 6 showed, it wouldn't run.
 Further investigation is needed, including other DOS distributions, be it PTS and Paragon DOS and FreeDOS.
+
+Furterly, the `confram` utility is not very sophisticated, as it only supports only exclusion range at the time.
+It can be extended to have multiple regions covered, which whould maximize the amount of usable conventional memory. 
+
 
 ## The Code
 
