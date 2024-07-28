@@ -1,0 +1,29 @@
+all: de en
+
+de: confram.de jenseits.de sysmap.de
+en: confram.en beyond.en sysmap.en
+
+confram.de:
+	tpc de\confram.pas /e..\bin\de
+
+jenseits.de:
+	tpc de\jenseits.pas /e..\bin\de
+
+sysmap.de:
+	tcc -n..\bin\de de\sysmap.c
+
+confram.en:
+	tpc en\confram.pas /e..\bin\en
+
+beyond.en:
+	tpc en\beyond.pas /e..\bin\en
+
+sysmap.en:
+	tcc -n..\bin\en en\sysmap.c
+
+clean:
+	del ..\bin\de\*.obj
+	del ..\bin\en\*.obj
+	del ..\bin\de\*.exe
+	del ..\bin\en\*.exe
+
