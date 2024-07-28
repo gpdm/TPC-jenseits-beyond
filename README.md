@@ -56,10 +56,11 @@ as `sysmap` sometimes didn't properly detect the potentially available RAM segme
 
 Here's what a typical output looks like:
 
-
+![sysmap default output](img/sysmap_1.png)
 
 And here's the same machine using the `mft` utility:
 
+![mft default output](img/mft_1.png)
 
 And as you see at the example above, `sysmap` would report you the `A000-AFFF` region free to use,
 whereas `mft` tells you it's the VGA region.
@@ -75,16 +76,21 @@ Ok, here we get a bit unprecise.
 Still, the memory is fragmented, and the additional memory is maybe not big enough to run one single program.
 The main concern is the largest contiguous memory area.
 
-Let's look at the `mft` output again, which shows us the different of the largest memory block without
-`confram` in place:
+Let's look at the `mft` output again, which shows us the different of the largest memory block with
+`confram` in place, but the mouse driver loaded into low memory:
 
+![mft with mouse driver loaded to low memory](img/mft_2a.png)
 
-And here the same with `confram` in place:
+![mft with mouse driver loaded to low memory](img/mft_2b.png)
 
+And here the same with `confram` amd the mouse driver loaded above 640k using the `beyond` utility:
 
+![mft with mouse driver loaded to low memory](img/mft_3a.png)
 
-Now, when loading your TSRs, let's say the mouse driver, it would by default load into the next available segment.
-In our example, it would decrease the size of the availabe free memory segment by whatever amount of memory the mouse driver takes.
+![mft with mouse driver loaded to low memory](img/mft_3b.png)
+
+Coming from this, when loading your TSRs, like the mouse driver in the example, it would by default load into the next available segment.
+In our example, it would decrease the size of the availabe free memory segment by around 16k.
 
 This would limit your ability to start programs, as everything would still use up the conventional below 640K.
 Technically, even if you have more memory available, it wouldn't help, as a program must load into a single contiguous memory region.
@@ -106,10 +112,6 @@ What `jenseits` (`beyond`) is this: It temporarily consumes all memory available
 As all memory below 640k is occupied, it has no other way than loading into the next free available segments above 640K.
 
 It thereafter frees up the memory below 640K.
-
-This is what it looks like, leaving you still with a large contiguous memory are free below 640K.
-
-
 
 ## Technique Explained
 
