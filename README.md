@@ -166,8 +166,8 @@ The code available in this repository was reconstructed from the digital scans o
 
 For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this (repository)[ct].
 
-I provide both the unaltered *german* copy of the source files and precompiled binaries,
-as well as *english* translated sources and binaries.
+I provide both the unaltered *german* copy of the (source files)[src/de] and (precompiled binaries)[bin/de],
+as well as *english* (translated sources)[src/en] and (binaries)[bin/en].
 
 No further change was applied to the english copies apart from the translation,
 which overs some code segments, annotations and comments, function names.
