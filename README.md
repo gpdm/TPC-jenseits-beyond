@@ -162,16 +162,12 @@ Further investigation is needed, including other DOS distributions, be it PTS an
 
 ## The Code
 
-The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine *c't*.
+The code available in this repository was reconstructed from the digital scans of these issues of the german IT magazine (c't)[https://www.heise.de/ct].
 
-[c‘t 5'88, p164](https://archive.org/details/ct-1988.01/C%27t%20-%201988.05/page/164/mode/2up)
+For purposes of historical documentation and preservation, excerpts from the PDF scans are provided in this (repository)[ct].
 
-[c‘t 11‘88, P140](https://archive.org/details/ct-1988.01/C%27t%20-%201988.11/page/140/mode/1up)
-
-For purposes of historical documentation and preservation, the excerpts from the PDF scan are provided in this repository.
-
-I provide both the unaltered german copy of the source files and precompiled binaries,
-as well as english translated sources and binaries.
+I provide both the unaltered *german* copy of the source files and precompiled binaries,
+as well as *english* translated sources and binaries.
 
 No further change was applied to the english copies apart from the translation,
 which overs some code segments, annotations and comments, function names.
